@@ -8,10 +8,12 @@ namespace DSPracticeProblem
         {
             Console.WriteLine("Data Structure Practice Problem!");
             LinkedList<int> list = new LinkedList<int>();
+            Stack<int> stack = new Stack<int>();
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("\nSelect the operation to perform \n1.Create Linked List \n2.Display \n3.Exit");
+                Console.WriteLine("\nSelect the operation to perform \n1.Create Linked List \n2.Display \n3.Create and Display Stack" +
+                    "\n4.Exit");
                 int options = Convert.ToInt32(Console.ReadLine());
                 switch (options)
                 {
@@ -22,6 +24,12 @@ namespace DSPracticeProblem
                         break;
                     case 2:
                         list.Display();
+                        break;
+                    case 3:
+                        stack.Push(70);
+                        stack.Push(30);
+                        stack.Push(56);
+                        stack.Display();
                         break;
                     default:
                         flag=false;
